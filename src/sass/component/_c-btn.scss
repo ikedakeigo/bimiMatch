@@ -1,15 +1,31 @@
 @use '../foundation' as *;
 
 .c-btn {
-  padding: prem(14) prem(60);
+  padding: rem(20) rem(60);
   display: inline-block;
-  font-size: prem(15);
   line-height: 1;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   border: 1px solid #000;
-  border-radius: prem(50);
+  border-radius: rem(20);
   background-color: #fff;
+  position: relative;
+  &::after{
+  content: "";
+  display: inline-block;
+  width: rem(20);
+  height: rem(20);
+  border-radius:  rem(50);
+  background-color: $color-text-green;
+  margin-left: rem(20);
+  // 矢印のスタイルを追
+  position: absolute;
+  top: 50%;
+  border-top: rem(2) solid #000;
+  border-right: rem(2) solid #000;
+  transform: translateY(-50%) rotate(45deg);
+  transition: .3s;
+  }
 }
 
 // Modifier
