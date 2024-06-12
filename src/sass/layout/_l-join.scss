@@ -1,0 +1,13 @@
+@use "../foundation/" as *;
+
+.l-join {
+  // margin-bottom: rem(50);
+  background-color: $color-bg-green;
+  padding-top: rem(100);
+  padding-bottom: rem(30);
+  position: relative;
+  @include mq(md){
+    padding-top: rem(200);
+    padding-bottom: rem(100);
+  }
+}

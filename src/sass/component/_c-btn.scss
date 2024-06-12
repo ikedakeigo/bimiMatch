@@ -1,35 +1,61 @@
-@use '../foundation' as *;
+@use "../foundation" as *;
 
 .c-btn {
+  position: relative;
+  text-align: center;
+}
+
+#service,
+#about {
+  .c-btn {
+    text-align: left;
+  }
+}
+#success {
+  .c-btn .c-btn__link {
+    @include mq(md) {
+    &:not(:first-child){
+      margin-left: rem(40);
+    }
+    }
+  }
+}
+
+.c-btn__link {
   padding: rem(20) rem(60);
+  position: relative;
   display: inline-block;
   line-height: 1;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  border: 1px solid #000;
+  border: 1px solid #a4a4a4;
+  background-color: $color-white;
   border-radius: rem(20);
-  background-color: #fff;
-  position: relative;
-  &::after{
-  content: "";
-  display: inline-block;
-  width: rem(20);
-  height: rem(20);
-  border-radius:  rem(50);
-  background-color: $color-text-green;
-  margin-left: rem(20);
-  // 矢印のスタイルを追
-  position: absolute;
-  top: 50%;
-  border-top: rem(2) solid #000;
-  border-right: rem(2) solid #000;
-  transform: translateY(-50%) rotate(45deg);
-  transition: .3s;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(28);
+    width: rem(5);
+    height: rem(5);
+    border-top: rem(2) solid $color-white;
+    border-right: rem(2) solid $color-white;
+    transform: translateY(-50%) rotate(45deg);
+    transition: 0.3s;
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: rem(20);
+    width: rem(20);
+    height: rem(20);
+    background-color: $color-text-green;
+    border-radius: rem(50);
+    transition: 0.3s;
   }
 }
 
-// Modifier
-.c-btn.c-btn--black {
-  color: #fff;
-  background-color: #000;
-}
+

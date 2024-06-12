@@ -1,0 +1,8 @@
+@use "../foundation/" as *;
+
+.l-news {
+  margin-bottom: rem(50);
+  @include mq(md){
+    margin-bottom: rem(100);
+  }
+}

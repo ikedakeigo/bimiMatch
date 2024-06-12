@@ -1,0 +1,8 @@
+@use "../foundation/" as *;
+
+.l-brand {
+  margin-bottom: rem(50);
+  @include mq(md){
+    margin-bottom: rem(100);
+  }
+}

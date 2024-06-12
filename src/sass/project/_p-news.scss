@@ -1,0 +1,94 @@
+@use "../foundation/" as *;
+
+.p-news {
+
+}
+
+.p-news__inner {
+
+}
+
+
+.p-news__title-wrap {
+  margin-bottom: rem(30);
+  @include mq(md){
+    margin-bottom: rem(50);
+  }
+}
+
+.p-news__title {
+  text-align: center;
+}
+
+.main-title {
+
+}
+
+.p-news__wrap {
+  margin-bottom: rem(50);
+  @include mq(md){
+    margin-bottom: rem(70);
+  }
+}
+
+.p-news__list {
+
+}
+
+.p-news-list {
+
+}
+
+.p-news-list__item {
+  border-bottom: 1px dotted $color-black;
+}
+.p-news-list__item a {
+  padding: rem(20) 0;
+  display: block;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(28);
+    width: rem(5);
+    height: rem(5);
+    border-top: rem(2) solid $color-white;
+    border-right: rem(2) solid $color-white;
+    transform: translateY(-50%) rotate(45deg);
+    transition: 0.3s;
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: rem(20);
+    width: rem(20);
+    height: rem(20);
+    background-color: $color-text-green;
+    border-radius: rem(50);
+    transition: 0.3s;
+  }
+}
+
+.p-news-list__item-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(5);
+}
+
+.p-news-list__item-date {
+  font-size: rem(16);
+  line-height: 1;
+}
+
+.p-news-list__item-title {
+  margin-top: rem(12);
+  font-size: rem(16);
+  line-height: 1.5;
+  @include mq(md){
+      margin-top: 0;
+  }
+}

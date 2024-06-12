@@ -1,0 +1,96 @@
+@use "../foundation/" as *;
+
+.p-success {
+
+}
+
+
+
+.p-success__inner {
+
+}
+
+.p-success__title-wrap {
+  margin-bottom: rem(30);
+  @include mq(md){
+    margin-bottom: rem(50);
+  }
+}
+
+.p-success__title {
+  text-align: center;
+}
+
+.main-title {
+
+}
+
+.p-success__wrap {
+  margin-bottom: rem(30);
+  height: 100%;
+  @include mq(md){
+    margin-bottom: rem(50);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-success__content {
+  @include mq(md){
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.p-success__item-title {
+  background-color: $color-bg;
+  color: $color-text-green;
+  text-align: center;
+  border-radius:  rem(50);
+  margin: 0 auto;
+  margin-bottom: rem(-25);
+  position: relative;
+  z-index: 1;
+  @include mq(md){
+    max-width:  rem(450);
+    padding:  rem(20) rem(40);
+  }
+}
+
+.p-success__item-img {
+  width: 100%;
+  img {
+    width: 100%;
+    aspect-ratio: 530/350;
+    object-fit: cover;
+    height: auto;
+  }
+}
+
+.p-success__item__text {
+  background-color: $color-bg;
+  padding:  rem(20);
+  border-radius:  rem(20);
+  margin: 0 auto;
+  margin-top: rem(-50);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  @include mq(md){
+    max-width:  rem(450);
+  }
+
+  p {
+    
+  }
+}
+
+.c-btn {
+}
+
+.c-btn__link {
+
+}

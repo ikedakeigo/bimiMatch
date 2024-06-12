@@ -25,7 +25,7 @@
       <div class="p-header__inner">
         <h1 class="p-header__logo">
           <a href="#">
-            <img src="./images/common/logo.svg" alt="LOGO">
+            <img src="./images/common/logo.svg" alt="LOGO" />
           </a>
         </h1>
         <nav class="p-header__nav">
@@ -70,12 +70,15 @@
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <!-- about -->
-      <section class="p-about l-about" id="">
+      <section class="p-about l-about" id="about">
         <div class="p-about__inner inner">
           <div class="p-about__title-wrap">
-            <h2 class="p-about__title main-title" data-title="ABOUT US">
+            <h2
+              class="p-about__title main-title about-title"
+              data-title="ABOUT US"
+            >
               <span>
                 首都圏を中心にフードデリバリーの<br />
                 フランチャイズ支援事業を展開しています
@@ -89,12 +92,12 @@
                 ポストコロナ時代から、外食を控え、美味しいメニューをご自宅で食するライフスタイルが確立しました。ABCには様々な飲食業態から200を超えるメニュー開発の実績と、それをスムーズにお客様宅へお届けするデリバリー運営のノウハウがあり、時代のニーズとともに現在、事業を拡大させています。
               </p>
             </div>
-            <div class="p-about__img">
+            <!-- <div class="p-about__img">
               <img
                 src="https://placehold.jp/640x360.png"
                 alt="首都圏を中心にフードデリバリーのフランチャイズ支援事業を展開しています"
               />
-            </div>
+            </div> -->
           </div>
           <div class="c-btn">
             <a href="" class="c-btn__link">詳しく見る</a>
@@ -103,58 +106,59 @@
       </section>
 
       <!-- service -->
-      <section class="p-service l-service" id="">
+      <section class="p-service l-service" id="service">
         <div class="p-service__inner inner">
           <!-- 1 -->
           <div class="p-service-content top">
-            <div class="p-service__title-wrap">
-              <h2 class="p-service__title main-title" data-title="SERVICE">
-                <span>デリバリーニーズの市場調査</span>
-              </h2>
-            </div>
+            <h2 class="p-service__title main-title" data-title="SERVICE"></h2>
             <div class="p-service__wrap">
               <div class="p-service__wrap-box">
+                <div class="p-service__title-wrap">
+                  <h2 class="p-service__title main-title">
+                    <span>デリバリーニーズの市場調査</span>
+                  </h2>
+                </div>
                 <div class="p-service__text">
                   <p>
                     時代の追い風があるとはいえ、やみくもにフランチャイズ参画を募ることは行なっていません。あくまで該当地域において、フードデリバリー事業が継続的なビジネスになり得るか？競合店との比較や優位点を見出すなど、専任スタッフが分析調査してプランをご提示します。
                   </p>
                 </div>
-                <div class="p-service__img">
-                  <img
-                    src="./img/service.jpg"
-                    alt="デリバリーニーズの市場調査"
-                  />
+                <div class="c-btn">
+                  <a href="" class="c-btn__link">対応エリア</a>
                 </div>
               </div>
-              <div class="c-btn">
-                <a href="" class="c-btn__link">対応エリア</a>
+              <div class="p-service__img">
+                <img
+                  src="/assets/img/service/service_01.jpg"
+                  alt="デリバリーニーズの市場調査"
+                />
               </div>
             </div>
           </div>
 
           <!-- 2 -->
           <div class="p-service-content middle">
-            <div class="p-service__title-wrap">
-              <h2 class="p-service__title main-title" data-title="">
-                <span>豊富な業態とメニュー開発ノウハウ</span>
-              </h2>
-            </div>
             <div class="p-service__wrap">
               <div class="p-service__wrap-box">
+                <div class="p-service__title-wrap">
+                  <h2 class="p-service__title main-title" data-title="">
+                    <span>豊富な業態とメニュー開発ノウハウ</span>
+                  </h2>
+                </div>
                 <div class="p-service__text">
                   <p>
                     ABCでは、カレー、冷麺、スムージー、ガパオライス、など14種類の飲食業態のブランドラインセスを保持し、200を超えるメニュー開発実績があります。加盟店様のご希望や市場調査から、地域ニーズに合わせた事業プランを導き出すことが可能です。
                   </p>
                 </div>
-                <div class="p-service__img">
-                  <img
-                    src="./img/service.jpg"
-                    alt="デリバリーニーズの市場調査"
-                  />
+                <div class="c-btn">
+                  <a href="" class="c-btn__link">取り扱いブランド</a>
                 </div>
               </div>
-              <div class="c-btn">
-                <a href="" class="c-btn__link">取り扱いブランド</a>
+              <div class="p-service__img">
+                <img
+                  src="/assets/img/service/service_02.jpg"
+                  alt="デリバリーニーズの市場調査"
+                />
               </div>
             </div>
           </div>
@@ -165,36 +169,39 @@
               <div class="p-service__title-img">
                 <div class="p-service__title-img__img">
                   <img
-                    src="./img/service.jpg"
+                    src="/assets/img/service/service_logo01.jpg"
                     alt="フードデリバリーFC事業支援"
                   />
                 </div>
+                <span class="p-service-cross"></span>
                 <div class="p-service__title-img__img">
-                  <img src="./img/service.jpg" alt="" />
-                </div>
-                <div class="p-service__title-img__img">
-                  <img src="./img/service.jpg" alt="Uber Eats" />
+                  <img
+                    src="/assets/img/service/service_logo02.jpg"
+                    alt="Uber Eats"
+                  />
                 </div>
               </div>
             </div>
-            <div class="p-service__title-wrap">
-              <h2 class="p-service__title main-title" data-title="">
-                <span>デリバリー大手「ウーバー」との業務連携</span>
-              </h2>
-            </div>
-            <div class="p-service__wrap">
-              <div class="p-service__wrap-box">
-                <div class="p-service__text">
-                  <p>
-                    ABCでは、フードデリバリー事業の先駆者であるウーバーと事業連携を行い、<br />
-                    新規フランチャイズ展開における宅配サービスを充実させています。展開エリアもウーバーの対応エリアに合わせて順次拡大中です。
-                  </p>
-                </div>
-                <div class="p-service__img">
-                  <img
-                    src="./img/service.jpg"
-                    alt="デリバリーニーズの市場調査"
-                  />
+            <div class="p-service-content__bottom-bg">
+              <div class="p-service__title-wrap">
+                <h2 class="p-service__title main-title" data-title="">
+                  <span>デリバリー大手「ウーバー」との業務連携</span>
+                </h2>
+              </div>
+              <div class="p-service__wrap">
+                <div class="p-service__wrap-box">
+                  <div class="p-service__text">
+                    <p>
+                      ABCでは、フードデリバリー事業の先駆者であるウーバーと事業連携を行い、<br />
+                      新規フランチャイズ展開における宅配サービスを充実させています。展開エリアもウーバーの対応エリアに合わせて順次拡大中です。
+                    </p>
+                  </div>
+                  <div class="p-service__img">
+                    <img
+                      src="/assets/img/service/service_03.jpg"
+                      alt="デリバリーニーズの市場調査"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -219,40 +226,39 @@
             <div class="p-brand__item-content">
               <ul class="p-brand__items">
                 <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo01.png" alt="" />
                 </li>
                 <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo02.png" alt="" />
                 </li>
                 <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo03.png" alt="" />
                 </li>
                 <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo04.png" alt="" />
                 </li>
                 <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo05.png" alt="" />
                 </li>
                 <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo06.png" alt="" />
+                </li>
+              </ul>
+              <ul class="p-brand__items">
+                <li class="p-brand__item">
+                  <img src="/assets/img/brand/brand_logo07.png" alt="" />
                 </li>
                 <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo08.png" alt="" />
                 </li>
                 <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo09.png" alt="" />
                 </li>
                 <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo10.png" alt="" />
                 </li>
                 <li class="p-brand__item">
-                  <img src="" alt="" />
-                </li>
-                <li class="p-brand__item">
-                  <img src="" alt="" />
-                </li>
-                <li class="p-brand__item">
-                  <img src="" alt="" />
+                  <img src="/assets/img/brand/brand_logo11.png" alt="" />
                 </li>
               </ul>
             </div>
@@ -279,15 +285,15 @@
               <li class="p-information-list__item">
                 <a href="#">
                   <div class="p-information-list__item-img">
-                    <img src="./images/common/information.jpg" alt="省略" />
+                    <img src="/assets/img/information/information_01.png" alt="省略" />
                   </div>
                   <div class="p-information-list__item-meta">
-                    <p class="p-information-list__item-category">サービス</p>
                     <time
                       class="p-information-list__item-date"
                       datetime="2024-02-01"
                       >2024.02.01</time
                     >
+                    <p class="p-information-list__item-category">サービス</p>
                   </div>
                   <div class="p-information-list__item-content">
                     <p class="p-information-list__item-title">
@@ -303,15 +309,15 @@
               <li class="p-information-list__item">
                 <a href="#">
                   <div class="p-information-list__item-img">
-                    <img src="./images/common/information.jpg" alt="省略" />
+                    <img src="/assets/img/information/information_02.png" alt="省略" />
                   </div>
                   <div class="p-information-list__item-meta">
-                    <p class="p-information-list__item-category">更新情報</p>
                     <time
                       class="p-information-list__item-date"
                       datetime="2024-02-01"
                       >2024.02.01</time
                     >
+                    <p class="p-information-list__item-category">更新情報</p>
                   </div>
                   <div class="p-information-list__item-content">
                     <p class="p-information-list__item-title">
@@ -327,15 +333,15 @@
               <li class="p-information-list__item">
                 <a href="#">
                   <div class="p-information-list__item-img">
-                    <img src="./images/common/information.jpg" alt="省略" />
+                    <img src="/assets/img/information/information_03.png" alt="省略" />
                   </div>
                   <div class="p-information-list__item-meta">
-                    <p class="p-information-list__item-category">成功事例</p>
                     <time
                       class="p-information-list__item-date"
                       datetime="2024-02-01"
                       >2024.02.01</time
                     >
+                    <p class="p-information-list__item-category">成功事例</p>
                   </div>
                   <div class="p-information-list__item-content">
                     <p class="p-information-list__item-title">
@@ -413,106 +419,98 @@
       <!-- join -->
       <section class="p-join l-join" id="">
         <div class="p-join__inner inner">
-          <div class="p-join__title-wrap">
-            <h2 class="p-join__title main-title" data-title="JOIN US">
-              <span>ABCが選ばれる理由</span>
-            </h2>
-          </div>
-          <div class="p-join__wrap">
-            <ul class="p-join-list__items">
-              <!-- 1 -->
-              <li class="p-join-list__item">
-                <div class="p-join-list__item-img">
-                  <img src="./img/join.jpg" alt="省略" />
-                </div>
-                <div class="p-join-list__item-content">
-                  <p class="p-join-list__item-text">テキストテキストテキスト</p>
-                </div>
-              </li>
-
-              <!-- 2 -->
-              <li class="p-join-list__item">
-                <div class="p-join-list__item-img">
-                  <img src="./img/join.jpg" alt="省略" />
-                </div>
-                <div class="p-join-list__item-content">
-                  <p class="p-join-list__item-text">テキストテキストテキスト</p>
-                </div>
-              </li>
-
-              <!-- 3 -->
-              <li class="p-join-list__item">
-                <div class="p-join-list__item-img">
-                  <img src="./img/join.jpg" alt="省略" />
-                </div>
-                <div class="p-join-list__item-content">
-                  <p class="p-join-list__item-text">テキストテキストテキスト</p>
-                </div>
-              </li>
-
-              <!-- 4 -->
-              <li class="p-join-list__item">
-                <div class="p-join-list__item-img">
-                  <img src="./img/join.jpg" alt="省略" />
-                </div>
-                <div class="p-join-list__item-content">
-                  <p class="p-join-list__item-text">テキストテキストテキスト</p>
-                </div>
-              </li>
-
-              <!-- 5 -->
-              <li class="p-join-list__item">
-                <div class="p-join-list__item-img">
-                  <img src="./img/join.jpg" alt="省略" />
-                </div>
-                <div class="p-join-list__item-content">
-                  <p class="p-join-list__item-text">テキストテキストテキスト</p>
-                </div>
-              </li>
-
-              <!-- 6 -->
-              <li class="p-join-list__item">
-                <div class="p-join-list__item-img">
-                  <img src="./img/join.jpg" alt="省略" />
-                </div>
-                <div class="p-join-list__item-content">
-                  <p class="p-join-list__item-text">テキストテキストテキスト</p>
-                </div>
-              </li>
-
-              <!-- 7 -->
-              <li class="p-join-list__item">
-                <div class="p-join-list__item-img">
-                  <img src="./img/join.jpg" alt="省略" />
-                </div>
-                <div class="p-join-list__item-content">
-                  <p class="p-join-list__item-text">テキストテキストテキスト</p>
-                </div>
-              </li>
-
-              <!-- 8 -->
-              <li class="p-join-list__item">
-                <div class="p-join-list__item-img">
-                  <img src="./img/join.jpg" alt="省略" />
-                </div>
-                <div class="p-join-list__item-content">
-                  <p class="p-join-list__item-text">テキストテキストテキスト</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="c-btn">
-            <a href="" class="c-btn__link">ご契約の流れ</a>
-          </div>
+            <div class="p-join__title-wrap">
+              <h2 class="p-join__title main-title" data-title="JOIN US">
+                <span>ABCが選ばれる理由</span>
+              </h2>
+            </div>
+            <div class="p-join__wrap p-join-content__bg">
+              <ul class="p-join-list__items p-join-content__bg-bottom">
+                <!-- 1 -->
+                <li class="p-join-list__item">
+                  <div class="p-join-list__item-img">
+                    <img src="https://placehold.jp/640x360.png" alt="省略" />
+                  </div>
+                  <div class="p-join-list__item-content">
+                    <p class="p-join-list__item-text">テキストテキストテキスト</p>
+                  </div>
+                </li>
+                <!-- 2 -->
+                <li class="p-join-list__item">
+                  <div class="p-join-list__item-img">
+                    <img src="https://placehold.jp/640x360.png" alt="省略" />
+                  </div>
+                  <div class="p-join-list__item-content">
+                    <p class="p-join-list__item-text">テキストテキストテキスト</p>
+                  </div>
+                </li>
+                <!-- 3 -->
+                <li class="p-join-list__item">
+                  <div class="p-join-list__item-img">
+                    <img src="https://placehold.jp/640x360.png" alt="省略" />
+                  </div>
+                  <div class="p-join-list__item-content">
+                    <p class="p-join-list__item-text">テキストテキストテキスト</p>
+                  </div>
+                </li>
+                <!-- 4 -->
+                <li class="p-join-list__item">
+                  <div class="p-join-list__item-img">
+                    <img src="https://placehold.jp/640x360.png" alt="省略" />
+                  </div>
+                  <div class="p-join-list__item-content">
+                    <p class="p-join-list__item-text">テキストテキストテキスト</p>
+                  </div>
+                </li>
+                <!-- 5 -->
+                <li class="p-join-list__item">
+                  <div class="p-join-list__item-img">
+                    <img src="https://placehold.jp/640x360.png" alt="省略" />
+                  </div>
+                  <div class="p-join-list__item-content">
+                    <p class="p-join-list__item-text">テキストテキストテキスト</p>
+                  </div>
+                </li>
+                <!-- 6 -->
+                <li class="p-join-list__item">
+                  <div class="p-join-list__item-img">
+                    <img src="https://placehold.jp/640x360.png" alt="省略" />
+                  </div>
+                  <div class="p-join-list__item-content">
+                    <p class="p-join-list__item-text">テキストテキストテキスト</p>
+                  </div>
+                </li>
+                <!-- 7 -->
+                <li class="p-join-list__item">
+                  <div class="p-join-list__item-img">
+                    <img src="https://placehold.jp/640x360.png" alt="省略" />
+                  </div>
+                  <div class="p-join-list__item-content">
+                    <p class="p-join-list__item-text">テキストテキストテキスト</p>
+                  </div>
+                </li>
+                <!-- 8 -->
+                <li class="p-join-list__item">
+                  <div class="p-join-list__item-img">
+                    <img src="https://placehold.jp/640x360.png" alt="省略" />
+                  </div>
+                  <div class="p-join-list__item-content">
+                    <p class="p-join-list__item-text">テキストテキストテキスト</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="c-btn">
+              <a href="" class="c-btn__link">ご契約の流れ</a>
+            </div>
         </div>
       </section>
 
       <!-- success -->
-      <section class="p-success l-success" id="">
-        <div class="p-success__inner inner">
+      <section class="p-success l-success" id="success">
+        <div class="p-success__inner inner p-success-bg">
           <div class="p-success__title-wrap">
-            <h2 class="p-success__title main-title" data-title="SUCCESS">
+            <h2 class="p-success__title main-title success-title" data-title="SUCCESS">
               <span>成功事例</span>
             </h2>
           </div>
@@ -522,7 +520,7 @@
                 <h3>事業開始１カ月で初期費用をPAY!</h3>
               </div>
               <div class="p-success__item-img">
-                <img src="./img/success.jpg" alt="省略" />
+                <img src="/assets/img/success/success_01.png" alt="省略" />
               </div>
               <div class="p-success__item__text">
                 <p>
@@ -536,7 +534,7 @@
                 <h3>利益率15％！飲食業の新業態です!</h3>
               </div>
               <div class="p-success__item-img">
-                <img src="./img/success.jpg" alt="省略" />
+                <img src="/assets/img/success/success_02.png" alt="省略" />
               </div>
               <div class="p-success__item__text">
                 <p>
@@ -550,6 +548,7 @@
             <a href="" class="c-btn__link">その他の事例</a>
             <a href="" class="c-btn__link">加盟店の声</a>
           </div>
+
         </div>
       </section>
     </main>
@@ -610,11 +609,11 @@
             <p class="p-footer-info__text">TEL:03-9999-9999 FAX:03-9999-8888</p>
           </div>
         </div>
-        <small class="p-footer__copyright"
-          >&copy;<span>ABC.All rights reserved </span></small
-        >
-      </div>
-    </footer>
+        </div>
+      <small class="p-footer__copyright"
+        >&copy;<span>ABC.All rights reserved </span></small
+      >
+        </footer>
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="./js/script.js"></script>

@@ -11,6 +11,7 @@
 
 .p-about__title-wrap {
   @include mq(md){
+    max-width:  rem(700);
     margin-bottom: rem(50);
   }
 }
@@ -30,6 +31,7 @@
 .p-about__text {
   margin-bottom: rem(30);
   @include mq(md){
+    max-width:  rem(700);
     margin-bottom: rem(40);
   }
 }

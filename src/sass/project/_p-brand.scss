@@ -1,0 +1,76 @@
+@use "../foundation/" as *;
+
+.p-brand {
+
+}
+
+
+
+.p-brand__inner {
+
+}
+
+.inner {
+
+}
+
+.p-brand__title-wrap {
+  margin-bottom: rem(30);
+  @include mq(md){
+    margin-bottom: rem(50);
+  }
+}
+
+.p-brand__title {
+  text-align: center;
+}
+
+.main-title {
+
+}
+
+.p-brand__wrap {
+  margin-bottom: rem(30);
+  @include mq(md){
+    margin-bottom: rem(50);
+  }
+}
+
+.p-brand__text {
+  max-width:  rem(700);
+  margin: 0 auto;
+  margin-bottom: rem(30);
+  @include mq(md){
+    margin-bottom: rem(50);
+  }
+}
+
+.p-brand__item-content {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.p-brand__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  &:not(:last-child) {
+    margin-bottom: rem(50);
+  }
+}
+
+.p-brand__item {
+  &:not(:first-child) {
+    // margin-left: rem(30);
+  }
+}
+
+.c-btn {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.c-btn__link {
+
+}
