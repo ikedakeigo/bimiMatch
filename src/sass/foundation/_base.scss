@@ -108,7 +108,7 @@ p{
 .forSP {
   display: block;
   @include mq(md) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -133,7 +133,7 @@ p{
 .main-title {
   position: relative;
   line-height: 1;
-  font-size: rem(26);
+  font-size: clamp(rem(20), 2.5vw,  rem(26));
   color: $color-text-green;
   letter-spacing: .4rem;
   line-height: 1.5;
@@ -146,19 +146,21 @@ p{
     display: block;
     font-style: oblique;
     font-family: "Roboto Condensed" , sans-serif;
-    margin-bottom: rem(50);
+    margin-bottom: rem(30);
     color: rgba($color: $color-text-green, $alpha: .1);
-    font-size:  rem(150);
+    font-size:  clamp(rem(50), 10vw, rem(100));
     text-align: center;
     line-height: 1;
     @include mq(md) {
+      margin-bottom: rem(50);
+      font-size:  rem(150);
     }
   }
   &.about-title {
     &::before {
-      text-align: left;
-      @include mq(md) {
 
+      @include mq(md) {
+        text-align: left;
       }
     }
   }

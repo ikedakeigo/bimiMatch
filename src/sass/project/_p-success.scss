@@ -36,10 +36,16 @@
 }
 
 .p-success__content {
+  max-width:  rem(400);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem(30);
   @include mq(md){
+    max-width: 100%;
     width: 48%;
     display: flex;
     flex-direction: column;
+    margin-bottom: rem(0);
   }
 }
 
@@ -52,6 +58,8 @@
   margin-bottom: rem(-25);
   position: relative;
   z-index: 1;
+  padding:  rem(20);
+  max-width:  rem(350);
   @include mq(md){
     max-width:  rem(450);
     padding:  rem(20) rem(40);
@@ -73,22 +81,28 @@
   padding:  rem(20);
   border-radius:  rem(20);
   margin: 0 auto;
-  margin-top: rem(-50);
+  margin-top: rem(20);
   position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
   height: 100%;
   @include mq(md){
+    margin-top: rem(-50);
     max-width:  rem(450);
   }
 
-  p {
-    
-  }
 }
 
 .c-btn {
+  .c-btn__link{
+    &:not(:last-child){
+      margin-bottom: rem(10);
+      @include mq(md){
+        margin-bottom: rem(0);
+      }
+    }
+  }
 }
 
 .c-btn__link {

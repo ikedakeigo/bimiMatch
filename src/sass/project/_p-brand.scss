@@ -54,13 +54,25 @@
 .p-brand__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  @include mq(md){
+    justify-content: space-evenly;
+  }
   &:not(:last-child) {
-    margin-bottom: rem(50);
+    @include mq(md){
+      margin-bottom: rem(50);
+    }
   }
 }
 
 .p-brand__item {
+  width: calc(100% / 2);
+  display: flex;
+  justify-content: center;
+  @include mq(md){
+    display: block;
+    width: calc(100% / 6);
+  }
   &:not(:first-child) {
     // margin-left: rem(30);
   }

@@ -51,7 +51,11 @@
 }
 
 .p-information-list__item {
-
+  max-width:  rem(400);
+  margin: 0 auto;
+  @include mq(md){
+    max-width: 100%;
+  }
 }
 .p-information-list__item a{
   display: flex;

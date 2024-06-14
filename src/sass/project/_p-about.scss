@@ -1,44 +1,74 @@
-@use '../foundation/' as *;
+@use "../foundation/" as *;
 
 .p-about {
-
 }
 
 .p-about__inner {
-
 }
 
-
 .p-about__title-wrap {
-  @include mq(md){
-    max-width:  rem(700);
+  margin-bottom: rem(30);
+  @include mq(md) {
+    // max-width:  rem(700);
     margin-bottom: rem(50);
   }
 }
 
 .p-about__title {
-
 }
 
 .p-about__wrap {
-
-  @include mq(md){
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../../assets/img/about/about_01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    opacity: 0.3;
+    transform: translate(50%, -10%);
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    scale: .4;
+    z-index: -1;
+  }
+  &::after{
+    background-image: url("../../../assets/img/about/about_02.png");
+    background-position: right bottom;
+    transform: translate(-50%, 50%);
+    right: 0;
+    bottom: -20%;
+  }
+  @include mq(md) {
+    &::before,&::after{
+      display: none;
+    }
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
   }
 }
 
 .p-about__text {
   margin-bottom: rem(30);
-  @include mq(md){
-    max-width:  rem(700);
+  @include mq(md) {
+    max-width: rem(700);
     margin-bottom: rem(40);
+  }
+
+  .p-about__title {
+    margin-bottom: rem(30);
+    @include mq(md) {
+      margin-bottom: rem(0);
+    }
   }
 }
 
 .p-about__img {
-
-  @include mq(md){
+  @include mq(md) {
     margin-left: rem(35);
   }
 }
