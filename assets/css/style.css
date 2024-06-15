@@ -227,7 +227,7 @@ p {
   font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
-  color: rgba(0, 160, 90, .1);
+  color: rgba(0, 160, 90, .5);
   font-size: clamp(50px, 10vw, 100px);
   font-size: clamp(3.125rem, 10vw, 6.25rem);
   text-align: center;
@@ -247,11 +247,14 @@ p {
 .main-title.success-title::before {
   font-weight: bold;
   color: #00a05a;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 @media screen and (min-width: 800px) {
   .main-title.success-title::before {
     font-size: 2.25rem;
     font-weight: bold;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -547,7 +550,7 @@ p {
   height: 12px;
   height: 0.75rem;
   display: inline-block;
-  background-image: url(./../images/common/contact-icon.svg);
+  background-image: url("../../images/common/contact-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -669,7 +672,7 @@ p {
   height: 15px;
   height: 0.9375rem;
   display: inline-block;
-  background-image: url(./../images/common/contact-icon.svg);
+  background-image: url("../../images/common/contact-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -692,7 +695,7 @@ p {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../../assets/img/about/about_01.png");
+  background-image: url("../../assets/img/about/about_01.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom;
@@ -706,7 +709,7 @@ p {
   z-index: -1;
 }
 .p-about__wrap::after {
-  background-image: url("../../../assets/img/about/about_02.png");
+  background-image: url("../../assets/img/about/about_02.png");
   background-position: right bottom;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
@@ -1010,7 +1013,7 @@ p {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../../assets/img/service/service_bg01.png");
+  background-image: url("../../assets/img/service/service_bg01.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -1032,7 +1035,7 @@ p {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../../assets/img/service/service_bg02.png");
+  background-image: url("../../assets/img/service/service_bg02.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -1408,7 +1411,7 @@ p {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../../assets/img/join/join_bg01.png");
+  background-image: url("../../assets/img/join/join_bg01.png");
   background-repeat: no-repeat;
   background-size: auto;
   opacity: 0.3;
@@ -1425,18 +1428,25 @@ p {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../../assets/img/join/join_bg02.png");
+  background-image: url("../../assets/img/join/join_bg02.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
   opacity: 0.3;
   top: -25%;
-  -webkit-transform: translate(10%, -10%);
-          transform: translate(10%, -10%);
+  -webkit-transform: translate(10%, -25%);
+          transform: translate(10%, -25%);
   right: 0;
   width: 100vw;
   height: 100%;
   z-index: -1;
+}
+@media screen and (min-width: 500px) {
+  .p-join-content__bg::after {
+    top: -25%;
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
 }
 
 .p-join-content__bg-bottom {
@@ -1448,7 +1458,7 @@ p {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../../assets/img/join/join_bg03.png");
+  background-image: url("../../assets/img/join/join_bg03.png");
   background-repeat: no-repeat;
   background-size: auto;
   opacity: 0.3;
@@ -1465,18 +1475,25 @@ p {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../../assets/img/join/join_bg04.png");
+  background-image: url("../../assets/img/join/join_bg04.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
   opacity: 0.3;
   top: 50%;
-  -webkit-transform: translate(10%, 0);
-          transform: translate(10%, 0);
+  -webkit-transform: translate(10%, -25%);
+          transform: translate(10%, -25%);
   right: 0;
   width: 100vw;
   height: 100%;
   z-index: -1;
+}
+@media screen and (min-width: 500px) {
+  .p-join-content__bg-bottom::after {
+    top: 50%;
+    -webkit-transform: translate(10%, 0);
+            transform: translate(10%, 0);
+  }
 }
 
 .p-join__title-wrap {
@@ -1499,7 +1516,7 @@ p {
 }
 .p-join__title span::after, .p-join__title span::before {
   content: "";
-  background-image: url("../../../assets/img/icon/icon_join_title.png");
+  background-image: url("../../assets/img/icon/icon_join_title.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -1733,7 +1750,7 @@ p {
     content: "";
     display: block;
     position: absolute;
-    background-image: url("../../../assets/img/footer/footer_bg01.png");
+    background-image: url("../../assets/img/footer/footer_bg01.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: left bottom;
@@ -1749,7 +1766,7 @@ p {
     content: "";
     display: block;
     position: absolute;
-    background-image: url("../../../assets/img/footer/footer_bg02.png");
+    background-image: url("../../assets/img/footer/footer_bg02.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right bottom;
@@ -1895,7 +1912,7 @@ p {
 }
 .p-footer__nav-item .icon::before {
   content: "";
-  background-image: url("../../../assets/img/icon/icon_join_title.png");
+  background-image: url("../../assets/img/icon/icon_join_title.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

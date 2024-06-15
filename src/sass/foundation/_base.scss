@@ -147,7 +147,7 @@ p{
     font-style: oblique;
     font-family: "Roboto Condensed" , sans-serif;
     margin-bottom: rem(30);
-    color: rgba($color: $color-text-green, $alpha: .1);
+    color: rgba($color: $color-text-green, $alpha: .5);
     font-size:  clamp(rem(50), 10vw, rem(100));
     text-align: center;
     line-height: 1;
@@ -168,9 +168,11 @@ p{
     &::before {
       font-weight: bold;
       color: $color-text-green;
+      margin-bottom: rem(20);
       @include mq(md) {
         font-size:  rem(36);
         font-weight: bold;
+        margin-bottom: rem(20);
       }
     }
   }

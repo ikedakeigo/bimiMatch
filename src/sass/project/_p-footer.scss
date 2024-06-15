@@ -18,7 +18,7 @@
       content: "";
       display: block;
       position: absolute;
-      background-image: url("../../../assets/img/footer/footer_bg01.png");
+      background-image: url("../../assets/img/footer/footer_bg01.png");
       background-repeat: no-repeat;
       background-size: auto;
       background-position: left bottom;
@@ -33,7 +33,7 @@
       content: "";
       display: block;
       position: absolute;
-      background-image: url("../../../assets/img/footer/footer_bg02.png");
+      background-image: url("../../assets/img/footer/footer_bg02.png");
       background-repeat: no-repeat;
       background-size: auto;
       background-position: right bottom;
@@ -158,7 +158,7 @@
   position: relative;
   &::before {
     content: "";
-    background-image: url("../../../assets/img/icon/icon_join_title.png");
+    background-image: url("../../assets/img/icon/icon_join_title.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

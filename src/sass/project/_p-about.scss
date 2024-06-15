@@ -24,7 +24,7 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url("../../../assets/img/about/about_01.png");
+    background-image: url("../../assets/img/about/about_01.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left bottom;
@@ -37,7 +37,7 @@
     z-index: -1;
   }
   &::after{
-    background-image: url("../../../assets/img/about/about_02.png");
+    background-image: url("../../assets/img/about/about_02.png");
     background-position: right bottom;
     transform: translate(-50%, 50%);
     right: 0;
