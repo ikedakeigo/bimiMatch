@@ -230,3 +230,21 @@
 .p-footer__copyright span {
   text-transform: uppercase;
 }
+
+
+.p-footer-bottom__img{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  margin: 0 auto;
+ gap: 0  rem(50);
+  img {
+    width: 100%;
+    aspect-ratio: 170/240;
+    object-fit: cover;
+    height: auto;
+  }
+  @include mq(md){
+    display: none;
+  }
+}

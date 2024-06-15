@@ -65,6 +65,13 @@
       margin-bottom: rem(0);
     }
   }
+
+  .c-btn{
+    margin-top: rem(30);
+    @include mq(md){
+      margin-top: rem(50);
+    }
+  }
 }
 
 .p-about__img {
